@@ -2,6 +2,10 @@
 
 const router = require('express').Router()
 
+// we are at the /api route
+
+router.use('/movies', require('./movies'))
+
 router.use((req, res, next) => {
   const err = new Error('API route not found!')
   err.status = 404

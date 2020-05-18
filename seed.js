@@ -1,10 +1,11 @@
 const { green, red, yellow } = require('chalk')
-const { db } = require('./server/db')
+const { db, Movies } = require('./server/db')
+const movies = require('./movie-info')
 
 const seed = async () => {
   try {
     await db.sync({ force: true })
-
+    await Movies.bulkCreate(movies)
     console.log(green('Sucessfully Seeded Database.'))
   } catch (err) {
     console.log(red(err))
