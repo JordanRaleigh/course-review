@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 const Routes = () => {
   return (
@@ -7,12 +7,12 @@ const Routes = () => {
       <div>
         <nav>Welcome!</nav>
         <main>
-          <h1>Welcome to the Margaret Hamilton Academy of JavaScript!</h1>
+          <h1>This is the Main Page!</h1>
           <p>This seems like a nice place to get started with some Routes!</p>
         </main>
       </div>
     </Router>
-  );
-};
+  )
+}
 
-export default Routes;
+export default Routes
